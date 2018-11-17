@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_step_instance">
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Named Entity Extraction">b0f0c98a4f312300d7e4a7d18110c75d</action>
+        <cid>68ee9a15-74df-45f1-8412-bb71b48e04f2</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Parse response</label>
+        <order>2</order>
+        <outputs/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:17:40</sys_created_on>
+        <sys_id>41f0c98a4f312300d7e4a7d18110c79f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Parse response</sys_name>
+        <sys_package display_value="Paralleldots Spoke" source="x_265424_paralleld">6685b8024f312300d7e4a7d18110c715</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Paralleldots Spoke">6685b8024f312300d7e4a7d18110c715</sys_scope>
+        <sys_update_name>sys_hub_step_instance_41f0c98a4f312300d7e4a7d18110c79f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:20:23</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=41f0c98a4f312300d7e4a7d18110c79f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>41f0c98a4f312300d7e4a7d18110c79f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:17:41</sys_created_on>
+        <sys_id>19f0c98a4f312300d7e4a7d18110c7c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:17:41</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>41f0c98a4f312300d7e4a7d18110c79f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:17:41</sys_created_on>
+        <sys_id>d9f0c98a4f312300d7e4a7d18110c7c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:20:23</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+var response_json = JSON.parse(inputs.response);
+ if(response_json.code==200){
+   
+  outputs.entities_array = response_json.entities;
+
+ } else {
+   outputs.error = response_json.Error;
+ }
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=41f0c98a4f312300d7e4a7d18110c79f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>41f0c98a4f312300d7e4a7d18110c79f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:17:41</sys_created_on>
+        <sys_id>d1f0c98a4f312300d7e4a7d18110c7c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:17:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>41f0c98a4f312300d7e4a7d18110c79f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:17:41</sys_created_on>
+        <sys_id>55f0c98a4f312300d7e4a7d18110c7c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:17:41</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_41f0c98a4f312300d7e4a7d18110c79f</table>
+        <value>{{step[781812e2-1dc1-4f32-a719-cc157d8f5e4a].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>41f0c98a4f312300d7e4a7d18110c79f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:17:41</sys_created_on>
+        <sys_id>95f0c98a4f312300d7e4a7d18110c7c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:17:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>41f0c98a4f312300d7e4a7d18110c79f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:17:41</sys_created_on>
+        <sys_id>19f0c98a4f312300d7e4a7d18110c7c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:17:41</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_41f0c98a4f312300d7e4a7d18110c79f</table>
+        <value>{{step[781812e2-1dc1-4f32-a719-cc157d8f5e4a].status_code}}</value>
+    </sys_element_mapping>
+</record_update>
