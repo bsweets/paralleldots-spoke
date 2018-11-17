@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_category">
+    <sys_hub_category action="INSERT_OR_UPDATE">
+        <name>Text Analysis</name>
+        <order>100</order>
+        <sys_class_name>sys_hub_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 03:39:48</sys_created_on>
+        <sys_id>c44834464f312300d7e4a7d18110c798</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Text Analysis</sys_name>
+        <sys_package display_value="Paralleldots Spoke" source="x_265424_paralleld">6685b8024f312300d7e4a7d18110c715</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Paralleldots Spoke">6685b8024f312300d7e4a7d18110c715</sys_scope>
+        <sys_update_name>sys_hub_category_c44834464f312300d7e4a7d18110c798</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 03:39:48</sys_updated_on>
+    </sys_hub_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=c44834464f312300d7e4a7d18110c798"/>
+</record_update>

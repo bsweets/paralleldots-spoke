@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category display_value="Text Analysis">c44834464f312300d7e4a7d18110c798</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: Find the overall sentiment of a block of text along with the confidence score.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;: Sentiment API accepts two parameters - text and api_key and returns a json response containing the overall sentiment of the input text and confidence score for each of the sentiment label (positive, negative and neutral). There is no limitation to the number of characters that you can pass to the API but for optimum results, please pass short texts (tweets, comments, news headlines, etc.)&lt;/p&gt;</description>
+        <internal_name>get_sentiment</internal_name>
+        <label_cache>[{"name":"{{action.text}}","label":"action➛Text","type":"action","ref":""},{"name":"{{step[781812e2-1dc1-4f32-a719-cc157d8f5e4a].u_paralleldots_api_key}}","label":"step➛Get Sentiment➛Paralleldots API key","type":"step","ref":""},{"name":"{{step[781812e2-1dc1-4f32-a719-cc157d8f5e4a].response_body}}","label":"step➛Get Sentiment➛Response Body","type":"step","ref":""},{"name":"{{step[781812e2-1dc1-4f32-a719-cc157d8f5e4a].status_code}}","label":"step➛Get Sentiment➛Status Code","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].s}}","label":"step➛Parse response➛s","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].se}}","label":"step➛Parse response➛se","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].sen}}","label":"step➛Parse response➛sen","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].sent}}","label":"step➛Parse response➛sent","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].senti}}","label":"step➛Parse response➛senti","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].sentim}}","label":"step➛Parse response➛sentim","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].sentime}}","label":"step➛Parse response➛sentime","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].sentimen}}","label":"step➛Parse response➛sentimen","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].sentiment}}","label":"step➛Parse response➛sentiment","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].n}}","label":"step➛Parse response➛n","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].ne}}","label":"step➛Parse response➛ne","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].neg}}","label":"step➛Parse response➛neg","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].nega}}","label":"step➛Parse response➛nega","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negat}}","label":"step➛Parse response➛negat","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negati}}","label":"step➛Parse response➛negati","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negativ}}","label":"step➛Parse response➛negativ","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative}}","label":"step➛Parse response➛negative","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_}}","label":"step➛Parse response➛negative_","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_p}}","label":"step➛Parse response➛negative_p","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_pr}}","label":"step➛Parse response➛negative_pr","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_pro}}","label":"step➛Parse response➛negative_pro","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_prob}}","label":"step➛Parse response➛negative_prob","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_proba}}","label":"step➛Parse response➛negative_proba","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_probab}}","label":"step➛Parse response➛negative_probab","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_probabi}}","label":"step➛Parse response➛negative_probabi","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_probabil}}","label":"step➛Parse response➛negative_probabil","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_probabili}}","label":"step➛Parse response➛negative_probabili","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_probabilit}}","label":"step➛Parse response➛negative_probabilit","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_probability}}","label":"step➛Parse response➛negative_probability","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].neutral_probability}}","label":"step➛Parse response➛neutral_probability","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].positive_probability}}","label":"step➛Parse response➛positive_probability","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].e}}","label":"step➛Parse response➛e","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].er}}","label":"step➛Parse response➛er","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].err}}","label":"step➛Parse response➛err","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].erro}}","label":"step➛Parse response➛erro","type":"step","ref":""},{"name":"{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].error}}","label":"step➛Parse response➛error","type":"step","ref":""}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Get Sentiment</name>
+        <outputs/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 03:43:13</sys_created_on>
+        <sys_id>1c1930464f312300d7e4a7d18110c720</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Get Sentiment</sys_name>
+        <sys_package display_value="Paralleldots Spoke" source="x_265424_paralleld">6685b8024f312300d7e4a7d18110c715</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Paralleldots Spoke">6685b8024f312300d7e4a7d18110c715</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_1c1930464f312300d7e4a7d18110c720</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:14:07</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=1c1930464f312300d7e4a7d18110c720"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1c1930464f312300d7e4a7d18110c720"/>
+    <sys_element_mapping action="delete_multiple" query="id=1c1930464f312300d7e4a7d18110c720"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error</field>
+        <id>1c1930464f312300d7e4a7d18110c720</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:14:07</sys_created_on>
+        <sys_id>0120818a4f312300d7e4a7d18110c7d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:14:07</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c1930464f312300d7e4a7d18110c720</table>
+        <value>{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].error}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>negative_probability</field>
+        <id>1c1930464f312300d7e4a7d18110c720</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:05:15</sys_created_on>
+        <sys_id>d31e7c0a4f312300d7e4a7d18110c78b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:05:15</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c1930464f312300d7e4a7d18110c720</table>
+        <value>{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].negative_probability}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>neutral_probability</field>
+        <id>1c1930464f312300d7e4a7d18110c720</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:05:15</sys_created_on>
+        <sys_id>5f1e7c0a4f312300d7e4a7d18110c78a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:05:15</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c1930464f312300d7e4a7d18110c720</table>
+        <value>{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].neutral_probability}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>positive_probability</field>
+        <id>1c1930464f312300d7e4a7d18110c720</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:05:15</sys_created_on>
+        <sys_id>131e7c0a4f312300d7e4a7d18110c78b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:05:15</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c1930464f312300d7e4a7d18110c720</table>
+        <value>{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].positive_probability}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sentiment</field>
+        <id>1c1930464f312300d7e4a7d18110c720</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-17 04:05:15</sys_created_on>
+        <sys_id>9b1e7c0a4f312300d7e4a7d18110c78a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-17 04:05:15</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c1930464f312300d7e4a7d18110c720</table>
+        <value>{{step[68ee9a15-74df-45f1-8412-bb71b48e04f2].sentiment}}</value>
+    </sys_element_mapping>
+</record_update>
